@@ -1,10 +1,9 @@
-import java.util.ArrayList;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
         LinkedList<Zwierze> zwierzeta = new LinkedList<>();
         zwierzeta.add(new Pies());
         zwierzeta.add(new Kot());
@@ -12,7 +11,6 @@ public class Main {
         zwierzeta.add(new Pies());
         zwierzeta.add(new Kot());
         zwierzeta.add(new Wilk());
-        ((LinkedList)zwierzeta).push(new Wilk());
 
         for (var zwierze : zwierzeta)
         {
